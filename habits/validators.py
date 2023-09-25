@@ -13,3 +13,4 @@ class HabitOrRewardValidator:
         if field1 is not None and field2 is not None:
             raise ValidationError('You can not set pleasant habit and reward simultaneously. Choose either '
                                   'first or second')
+
