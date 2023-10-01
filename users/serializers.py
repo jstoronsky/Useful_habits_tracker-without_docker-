@@ -3,6 +3,9 @@ from users.models import User
 
 
 class UserSerializer(serializers.ModelSerializer):
+    """
+    Сериализатор пользователя. Переопределён метод create, чтобы была возможность регистрироваться через API
+    """
 
     password = serializers.CharField(write_only=True)
 

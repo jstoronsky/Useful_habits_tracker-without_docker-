@@ -24,7 +24,7 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="API документация по приложению онлайн-школы",
+        title="API документация по приложению 'Атомные привычки' (для 7 курсовой работы)",
         default_version='v1',
         description="",
         terms_of_service="https://www.example.com/policies/terms/",
@@ -38,6 +38,6 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls', namespace='users')),
-    path('', include('habits.urls', namespace='habits')),
+    path('habits/', include('habits.urls', namespace='habits')),
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

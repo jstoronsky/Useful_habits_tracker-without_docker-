@@ -1,0 +1,4 @@
+[flake8]
+ignore = D203
+exclude = migrations, tasks.py, periodic_tasks.py, venv, __pycache__
+max-line-length = 120

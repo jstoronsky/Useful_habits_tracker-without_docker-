@@ -10,7 +10,7 @@ class UsefulHabitAdmin(admin.ModelAdmin):
 
 @admin.register(PleasantHabit)
 class PleasantHabitAdmin(admin.ModelAdmin):
-    list_display = ('place', 'action', 'time_to_start')
+    list_display = ('pk', 'place', 'action')
 
 
 @admin.register(Reward)
